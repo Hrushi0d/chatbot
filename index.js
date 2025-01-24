@@ -1,6 +1,6 @@
 const axios = require("axios");
 function QNA(question){
-  const url = "https://ainexusbot101.cognitiveservices.azure.com/language/:query-knowledgebases?projectName=ainexusbot&api-version=2021-10-01&deploymentName=test";
+  const url = "https://ainexusbot101.cognitiveservices.azure.com/language/:query-knowledgebases?projectName=ainexusbot&api-version=2021-10-01&deploymentName=production";
 
   const headers = {
     "Ocp-Apim-Subscription-Key": "VHw2UOnLBzkaXXhamAF3FVlJyg7dru32pgWnbwipHCSg61RHRJ7eJQQJ99BAACYeBjFXJ3w3AAAaACOGZ4Gt",
@@ -42,3 +42,11 @@ function QNA(question){
 }
 
 QNA('Frequently Asked Questions')
+// while(true){
+//   // userinput
+//   // response = QNA(userinput)
+//   // Print(response)
+//   // Print(options)
+//   // if optionselected = QNA(option)
+  
+// }
